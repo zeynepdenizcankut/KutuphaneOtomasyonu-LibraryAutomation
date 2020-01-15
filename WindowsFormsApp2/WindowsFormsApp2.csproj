@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05BCC241-114D-4AFF-A2C4-DAB8C232A0A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Desktop\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAnasayfa.Designer.cs">
+      <DependentUpon>AdminAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminKitapEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminKitapEkle.Designer.cs">
+      <DependentUpon>AdminKitapEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminKitaplar.Designer.cs">
+      <DependentUpon>AdminKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRapor.Designer.cs">
+      <DependentUpon>AdminRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUyeEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUyeEkle.Designer.cs">
+      <DependentUpon>AdminUyeEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUyeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUyeler.Designer.cs">
+      <DependentUpon>AdminUyeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminİletişim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminİletişim.Designer.cs">
+      <DependentUpon>Adminİletişim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GirisYap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GirisYap.Designer.cs">
+      <DependentUpon>GirisYap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UyeAnasayfaa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeAnasayfaa.Designer.cs">
+      <DependentUpon>UyeAnasayfaa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeIade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeIade.Designer.cs">
+      <DependentUpon>UyeIade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeKitaplar.Designer.cs">
+      <DependentUpon>UyeKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeOduncAl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeOduncAl.Designer.cs">
+      <DependentUpon>UyeOduncAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeOl.Designer.cs">
+      <DependentUpon>UyeOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeProfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeProfil.Designer.cs">
+      <DependentUpon>UyeProfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UyeVerilenKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UyeVerilenKitaplar.Designer.cs">
+      <DependentUpon>UyeVerilenKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uyeİletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uyeİletisim.Designer.cs">
+      <DependentUpon>Uyeİletisim.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminAnasayfa.resx">
+      <DependentUpon>AdminAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminKitapEkle.resx">
+      <DependentUpon>AdminKitapEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminKitaplar.resx">
+      <DependentUpon>AdminKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminRapor.resx">
+      <DependentUpon>AdminRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUyeEkle.resx">
+      <DependentUpon>AdminUyeEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUyeler.resx">
+      <DependentUpon>AdminUyeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminİletişim.resx">
+      <DependentUpon>Adminİletişim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GirisYap.resx">
+      <DependentUpon>GirisYap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UyeAnasayfaa.resx">
+      <DependentUpon>UyeAnasayfaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeIade.resx">
+      <DependentUpon>UyeIade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeKitaplar.resx">
+      <DependentUpon>UyeKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeOduncAl.resx">
+      <DependentUpon>UyeOduncAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeOl.resx">
+      <DependentUpon>UyeOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeProfil.resx">
+      <DependentUpon>UyeProfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UyeVerilenKitaplar.resx">
+      <DependentUpon>UyeVerilenKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uyeİletisim.resx">
+      <DependentUpon>Uyeİletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CRQUERYENGINE">
+      <Guid>{E4B81D51-FB89-4D07-84A3-00BA9B71D76E}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PAGEOBJECTMODELLib">
+      <Guid>{237F4BEC-8AE5-41E1-AE84-B194E4670597}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PROMPTINGLib">
+      <Guid>{8106BAD6-FB6E-49D5-8368-3F7030C9F6E7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="SAXSERIALIZELib">
+      <Guid>{6EF0D172-0FAB-4FC3-BDBB-C6C0D9D69A10}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
